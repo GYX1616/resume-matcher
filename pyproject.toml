@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "resume-matcher"
+version = "0.1.0"
+description = "智能岗位匹配 CLI 工具 - 帮助求职者找到最匹配的工作岗位"
+requires-python = ">=3.9"
+dependencies = [
+    "typer[all]>=0.9",
+    "rich>=13.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "openai>=1.0",
+    "pymupdf>=1.24",
+    "python-docx>=1.0",
+    "streamlit>=1.30",
+    "playwright>=1.40",
+    "eval_type_backport>=0.1; python_version < '3.10'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[project.scripts]
+resume-matcher = "resume_matcher.cli.app:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/resume_matcher"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
