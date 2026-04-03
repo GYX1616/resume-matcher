@@ -1,6 +1,8 @@
 # 🎯 Resume Matcher - 智能岗位匹配--工作来找你！
 
-> AI 驱动的简历-岗位智能匹配工具，帮助求职者快速找到最适合自己的工作岗位。
+> 厌倦了在boss直聘上逐个点开岗位读jd再失望退出吗？🙍
+> 智能岗位匹配模式借助大模型，同时分析简历特征和岗位jd
+> 帮助你找到最匹配自己简历的岗位😺
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![DeepSeek](https://img.shields.io/badge/AI-DeepSeek-green.svg)](https://deepseek.com)
